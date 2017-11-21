@@ -1,23 +1,26 @@
-.visible {
-        display: block !important;
-        position: fixed;
+.isVisible {
+        position: sticky !important;
         top: 0;
+        left:200px;
+        right:100px;
+        
+        z-index: 2;
     }
 
  tr.heading{
      color:white; 
      background:#808080; 
-     width:100%;
     }
 
-    .invisible {
-        display: none !important;
-        margin-top: 5px;
-        position: fixed;
+    .isHidden{
+        display: none !important;  
     }
 
-table#invisible{
-    margin-right:200px;
-    display:none;
-    margin-right:100px;
+
+#stickyHeader{
+    table-layout: fixed;
+    width:100%;
+   margin:auto;
     }
+
+

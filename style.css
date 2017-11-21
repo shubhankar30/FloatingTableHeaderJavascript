@@ -1,0 +1,25 @@
+.visible {
+        display: block !important;
+        position: fixed;
+        top: 0;
+    }
+
+ tr.heading{
+     color:white; 
+     background:#808080; 
+     width:100%;
+    }
+
+    .invisible {
+        display: none !important;
+        margin-top: 5px;
+        position: fixed;
+    }
+
+table#invisible{
+    margin-right:200px;
+    display:none;
+    margin-right:100px;
+    }
+
+    

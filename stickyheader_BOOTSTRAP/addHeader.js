@@ -1,12 +1,13 @@
-window.onscroll = function myFunc() {
+window.onscroll = function myFunc() {//Header toggle function
     var scrollTopValue = (window.scrollY); 
-    if (scrollTopValue >= 420) { // Value of scroll Y in px. You should debug and test where you want your your header to be visible
-        document.getElementById("invisible").classList.add("visible");
-        document.getElementById("invisible").classList.remove("invisible");
-    };
+    //console.log(scrollTopValue); To debug the scroll value
+    if (scrollTopValue >= 430) { // Value of scroll Y in px. 
+        document.getElementById("stickyHeader").classList.add("isVisible");
+        document.getElementById("stickyHeader").classList.remove("isHidden");
+    }
 
-    if (scrollTopValue <= 419) {
-        document.getElementById("invisible").classList.add("invisible");
-        document.getElementById("invisible").classList.remove("visible");
-    };
+    if (scrollTopValue <= 429 || scrollTopValue >=1910) {
+        document.getElementById("stickyHeader").classList.add("isHidden");
+        document.getElementById("stickyHeader").classList.remove("isVisible");
+    }
 };
